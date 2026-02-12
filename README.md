@@ -43,6 +43,6 @@
         input_l_y_minus_axis = "-1"
 
 #### Connect by RDP to a Windows VM having webcam, microphone and sound
-> * use latest version of Freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries *
+> Use latest version of Freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries
 
     /opt/freerdp-nightly/bin/xfreerdp3 /v:win11.local:3389 /u:vagrant /p:vagrant /size:1600x900 /dynamic-resolution /dvc:rdpecam /sound:sys:pulse /microphone:sys:pulse +clipboard
