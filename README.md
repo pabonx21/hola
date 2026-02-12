@@ -1,4 +1,4 @@
-## some useful hacks may you need some day 
+### Some useful hacks may you need some day
 
 #### Clean OS memory cache
     sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
@@ -42,5 +42,7 @@
         input_l_y_plus_axis = "+1"
         input_l_y_minus_axis = "-1"
 
-#### Connect by RDP to a Windows VM having webcam, microphone and sound (use latest version of Freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries)
+#### Connect by RDP to a Windows VM having webcam, microphone and sound
+> * use latest version of Freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries *
+
     /opt/freerdp-nightly/bin/xfreerdp3 /v:win11.local:3389 /u:vagrant /p:vagrant /size:1600x900 /dynamic-resolution /dvc:rdpecam /sound:sys:pulse /microphone:sys:pulse +clipboard
