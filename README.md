@@ -44,5 +44,5 @@
     for ps1, download following bios from github scph7502.bin
 
 ### connect by RDP to a Windows VM having webcam, microphone and sound
-### Fist install latest version of freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries/
+#### Fist install latest version of freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries/
     /opt/freerdp-nightly/bin/xfreerdp3 /v:win11.local:3389 /u:vagrant /p:vagrant /size:1600x900 /dynamic-resolution /dvc:rdpecam /sound:sys:pulse /microphone:sys:pulse +clipboard
