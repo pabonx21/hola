@@ -1,13 +1,15 @@
 ### Some useful hacks may you need some day
 
-#### Clean OS memory cache
+#### Clean Linux OS memory cache
     sync && echo 3 | sudo tee /proc/sys/vm/drop_caches
 
 #### Flatpak hacks
     flatpak uninstall --delete-data zoom
     flatpak uninstall --unused --delete-data
 
-#### Create a repo from terminal (requires having gh installed and authenticated)
+#### Create a repo from terminal
+> requires having gh installed and authenticated
+
     git init
     gh repo create NombreDelRepo --public --source=. --remote=origin
     git add .
@@ -15,7 +17,7 @@
     git branch -M main
     git push -u origin main
 
-#### Useful hacks for gnome fresh installed
+#### Useful hacks for Gnome fresh installed
     gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
     gsettings set org.gnome.shell.extensions.dash-to-dock middle-click-action 'previews'
     gsettings set org.gnome.mutter check-alive-timeout 60000
@@ -32,10 +34,10 @@
         Pin-Priority: -10
     sudo apt update
 
-#### Sync gdm with desktop resolution
+#### Sync GDM with desktop resolution in Ubuntu
     sudo ln ~/.config/monitors.xml ~gdm/.config/monitors.xml
 
-#### Retroarch n64 hacks for joystick
+#### Retroarch N64 hacks for generic joysticks
 > For PS1, download following BIOS from github scph7502.bin
 
     vim /opt/retropie/configs/all/retroarch-joypads
