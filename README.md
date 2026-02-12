@@ -35,7 +35,8 @@
 #### Sync gdm with desktop resolution
     sudo ln ~/.config/monitors.xml ~gdm/.config/monitors.xml
 
-#### Retroarch n64 hacks for joystick (for PS1, download following BIOS from github scph7502.bin)
+#### Retroarch n64 hacks for joystick
+> For PS1, download following BIOS from github scph7502.bin
     vim /opt/retropie/configs/all/retroarch-joypads
         input_l_x_plus_axis = "+0"
         input_l_x_minus_axis = "-0"
