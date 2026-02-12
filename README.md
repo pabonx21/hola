@@ -37,6 +37,7 @@
 
 #### Retroarch n64 hacks for joystick
 > For PS1, download following BIOS from github scph7502.bin
+
     vim /opt/retropie/configs/all/retroarch-joypads
         input_l_x_plus_axis = "+0"
         input_l_x_minus_axis = "-0"
@@ -46,4 +47,5 @@
 #### Connect by RDP to a Windows VM having webcam, microphone and sound
 > Use latest version of Freerdp: https://ci.freerdp.com/job/freerdp-nightly-binaries
 
-    /opt/freerdp-nightly/bin/xfreerdp3 /v:win11.local:3389 /u:vagrant /p:vagrant /size:1600x900 /dynamic-resolution /dvc:rdpecam /sound:sys:pulse /microphone:sys:pulse +clipboard
+    /opt/freerdp-nightly/bin/xfreerdp3 /v:win11.local:3389 /u:vagrant /p:vagrant \
+    /size:1600x900 /dynamic-resolution /dvc:rdpecam /sound:sys:pulse /microphone:sys:pulse +clipboard
