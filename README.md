@@ -8,7 +8,7 @@
     flatpak uninstall --unused --delete-data
 
 #### Create a repo from terminal
-> requires having gh installed and authenticated
+> Requires having gh command installed and authenticated
 
     git init
     gh repo create NombreDelRepo --public --source=. --remote=origin
