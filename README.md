@@ -25,15 +25,6 @@
 #### Left4dead2 for laptops, add this to video.cfg
     "setting.mat_tonemapping_occlusion_use_stencil"		"1"
 
-#### Clean snap from Ubuntu 24.04
-    sudo snap remove --purge {snapd,core22,bare,snapd-desktop-integration,snap-store,gtk-common-themes,gnome-42-2204,firefox,firmware-updater}
-    sudo apt purge --autoremove snapd*
-    sudo vim /etc/apt/preferences.d/nosnap.pref
-        Package: snapd
-        Pin: release a=*
-        Pin-Priority: -10
-    sudo apt update
-
 #### Sync GDM with desktop resolution in Ubuntu
     sudo ln ~/.config/monitors.xml ~gdm/.config/monitors.xml
 
